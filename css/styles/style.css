@@ -20,6 +20,7 @@ img {
 }
 .technologies {
   display: grid;
+  max-width: 1510px;
 }
 .technologies__title {
   font-size: 60px;
