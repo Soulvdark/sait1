@@ -18,7 +18,7 @@
       </p>
       <div class="steps">
         <div class="steps-active block">
-          <span class="ball-blue"><span class="ball-purple"></span></span>
+          <div class="ball-blue"></div>
           <div class="steps__info">
             <p class="steps-text">1. Соглосование макета</p>
             <svg
@@ -273,7 +273,30 @@
         </svg>
       </div>
     </div>
-
+    <button
+      class="button__dialog"
+      type="button"
+      onclick="window['popup'].showModal()"
+      aria-controls="popup"
+    >Нажми</button>
+    <dialog class="dialog" id="popup">
+      <div class="dialog__content">
+        <h3 class="dialog__content-text">Заказать сайт</h3>
+        <input type="text" class="dialog__content-fild" placeholder="Имя" />
+        <input
+          type="number"
+          class="dialog__content-fild"
+          placeholder="Телефон"
+        />
+        <input type="email" class="dialog__content-fild" placeholder="Е-майл" />
+        <input
+          type="submit"
+          class="dialog__content-fild"
+          onclick="window['popup'].close()"
+          aria-controls="popup"
+        />
+      </div>
+    </dialog>
     <script src="/js/main.js"></script>
   </body>
 </html>
