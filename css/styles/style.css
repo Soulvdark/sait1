@@ -195,8 +195,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: block;
   }
   .technologies__title {
-    width: 90%;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 58px;
   }
   .technologies__text {
